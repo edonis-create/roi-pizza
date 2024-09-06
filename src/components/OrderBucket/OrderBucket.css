@@ -1,0 +1,144 @@
+.order-bucket {
+  width: 350px;
+  background-color: #f8f5ee;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  font-family: "Arial", sans-serif;
+  position: fixed;
+  top: 20%;
+  right: 1%;
+}
+
+.order-bucket .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.order-bucket img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.order-bucket h1 {
+  font-size: 18px;
+  color: #333333;
+  margin: 0;
+}
+
+.order-bucket .pizza-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.order-bucket .pizza-item:hover {
+  background-color: #f0e5d8;
+}
+
+.order-bucket .pizza-name {
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.order-bucket .pizza-amount {
+  display: flex;
+  align-items: center;
+}
+
+.order-bucket .amount-btn {
+  background-color: #ffcc00;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-bucket .amount-btn:hover {
+  background-color: #ff9900;
+}
+
+.order-bucket .amount-value {
+  font-size: 16px;
+  color: #333333;
+  width: 30px;
+  text-align: center;
+}
+
+.order-bucket .delete-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  font-size: 14px;
+  color: #ff5722;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-bucket .remove-btn:hover {
+  color: #e64a19;
+}
+
+.order-bucket .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 2px solid #e0e0e0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.order-bucket .total-label {
+  text-align: left;
+}
+
+.order-bucket .total-value {
+  text-align: right;
+  color: #ff5722;
+}
+
+.order-bucket .place-order-btn {
+  background-color: #edc84b;
+  color: #434343;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
