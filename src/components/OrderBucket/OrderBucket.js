@@ -8,6 +8,12 @@ const OrderBucket = (props) => {
       </div>
     );
   }
+  const getTotalPrice = () => {
+    return Object.keys(props.orderedPizza).reduce((acc, pizzaName) => {
+      return acc + props.orderedPizza[pizzaName].total_price;
+    }, 0);
+  };
+
   return (
     <div className="order-bucket">
       <h1 className="title">Your order:</h1>
@@ -51,7 +57,7 @@ const OrderBucket = (props) => {
       })}
       <div className="total">
         <p className="total-label">Total:</p>
-        <p className="total-value">$ 0</p>
+        <p className="total-value">$ {getTotalPrice()}</p>
       </div>
       <button onClick={() => props.openModal()} className="place-order-btn">
         Place Order
