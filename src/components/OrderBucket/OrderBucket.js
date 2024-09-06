@@ -1,9 +1,10 @@
 import "./OrderBucket.css";
 const OrderBucket = (props) => {
+  const altAtr = "Bucket list";
   if (Object.keys(props.orderedPizza).length === 0) {
     return (
       <div className="order-bucket">
-        <img src="/assets/images/bucket.png" alt="bucket image" />
+        <img src="/assets/images/bucket.png" alt={altAtr} />
         <h1>Bucket is Empty</h1>
       </div>
     );
